@@ -1,0 +1,81 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node/Next.js
+node_modules/
+.next/
+out/
+build/
+.npm/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project Specific (Do NOT commit temp/cache files)
+results/
+dataset/
+test_images/
+real_world_validation/
+scratch/
+
+# Testing/Debugging scripts and artifacts
+test_errors.py
+test_resize_shift.py
+test_gatekeeper.py
+test_backend.py
+test_sample_matching.py
+debug_*.py
+scratch_*.py
+explore_*.py
+download_*.py
+run_*.py
+evaluate_*.py
+verify_dataset.py
+prepare_dataset.py
+prepare_dataset_backup.py
+
+# Exclude JSON dumps in root
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!components.json
+!ml/models/class_map.json
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/tsconfig.json
+!frontend/components.json
+
+# Images & MDs
+*.jpg
+*.png
+*.md
+!README.md
+!evaluation_report.md
+!frontend/AGENTS.md
+!frontend/CLAUDE.md
+!frontend/README.md
+
+# Sample folder must be tracked
+!sample/
+!sample/**/*.jpg
+!sample/**/*.png
+
+# IMPORTANT EXCLUSIONS
+*.pth
+!ml/models/best_model.pth
